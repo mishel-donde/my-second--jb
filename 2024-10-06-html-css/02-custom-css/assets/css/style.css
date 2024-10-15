@@ -1,0 +1,52 @@
+@font-face{
+    font-family: Bepholar;
+    src: url("assets/fonts");
+}
+h1 {
+    color: blue;
+    text-align: center;
+    font-family: Bepholar;
+    transition: 3s;
+    
+}
+
+h1:hover {
+    color: palevioletred;
+    transform: rotate(15deg) scale(2);
+}
+
+@keyframes MyAnima {
+   0% {
+        color: deeppink;
+        transform: scale(1.5);
+    }
+    50%{
+        color: aqua;
+        transform: scale(0.5);
+ 
+     }
+     100%{
+        color: blueviolet;
+        transform: scale(1.5);
+     }
+}
+p{
+    text-align: center;
+    margin-top: 50px;
+    animation: MyAnima 3s;   
+}
+
+p:hover{
+    animation: MyAnima 3s infinite;
+}
+
+h2{
+    font-size: 16px;
+}
+
+@media (max-width:600px) {
+    h2{
+        font-size: 32px;
+    }
+}
+

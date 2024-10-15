@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    font-size: xx-large;
+    background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    box-shadow: 8px;
+    border-radius: 30px;
+    
+}
+
+
+div { animation: infinite;
+    transform:rotate(1000deg);
+    transition: 5s;
+}

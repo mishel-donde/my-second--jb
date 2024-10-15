@@ -1,0 +1,28 @@
+html , body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    border: 1px solid #421427;
+    box-sizing: border-box;
+}
+.container > * {
+    border: 1px solid plum;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20% 70% 10%;
+}
+
+header , footer {
+    grid-column: span 6 ;
+}
+
+main {
+    grid-column: span 4 ;
+}

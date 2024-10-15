@@ -1,0 +1,23 @@
+body {
+    margin: 3px;
+    padding: 8px 12px;
+    text-align: center;
+    
+}
+
+table {
+    text-align: center;
+    font-size: 26px;
+    border-radius: 8px;
+    word-spacing: 10px;
+    
+
+}
+img {
+    border-radius: 50%;
+    
+}
+
+table ,th,td {
+    border: 1px solid gray;
+}

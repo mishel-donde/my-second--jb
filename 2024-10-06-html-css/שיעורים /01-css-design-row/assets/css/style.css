@@ -1,0 +1,26 @@
+
+
+.container>p {
+    direction: ltr;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 100px;
+    margin-top: 0%;
+}
+
+div:nth-child(1) {
+    display: flex;
+}
+
+p:nth-child(1){
+    color:red;
+   
+}
+
+p:nth-child(2){
+    color: yellow;
+}
+
+p:nth-child(3) {
+    color: green;
+}

@@ -1,0 +1,11 @@
+.my-button-design {
+    color: white;
+    background-color: hsl(302, 45%, 71%);
+    font-size: 26px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.bth-warning {
+    color: deeppink;
+}

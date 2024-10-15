@@ -1,0 +1,88 @@
+/*name selector*/
+h1{
+    color:cornflowerblue;
+    background-color: beige;
+}
+
+body {
+    border: 1px solid red ;
+}
+
+p{
+    color: #a0c6fa;
+}
+
+.cool-design {
+    color: #c4dbf9;
+    background-color: beige;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.cool-design-big {
+    font-size: xx-large ;
+    font-weight: bold;
+    color: hotpink;
+}
+
+p .cool-design{
+    text-decoration: underline;
+}
+
+#last-paragraph {
+    font-size: x-small;
+    text-decoration: underline;
+    font-style: italic;
+
+}
+
+input[placeholder="first name"] {
+    background-color: darkkhaki;
+    border: 3px dashed; 
+
+}
+
+a {
+    color: rgb(255, 73, 73);
+}
+
+
+a:visited {
+    color: teal;
+}
+
+a:hover {
+    color: tan;
+}
+
+p::first-letter {
+    font-size: x-large;
+    color: aquamarine;
+
+}
+
+span{
+    color: firebrick;
+}
+    
+/*combination of selectors*/
+
+.cool-design  {
+    text-decoration: underline;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* all tages that have a p tag  as parent somewhere*/
+p a {
+    color: blue;
+}
+
+p > a {
+    border: 3px dashed color gray;
+}

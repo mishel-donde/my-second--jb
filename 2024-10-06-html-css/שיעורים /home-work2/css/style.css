@@ -1,0 +1,33 @@
+body {
+    direction:rtl;
+}
+h1 {
+    text-align: center;
+    font-size: x-large;
+    color: rgb(234, 0, 0);
+
+}
+
+p {
+    text-align: center;
+}
+
+
+.login-table {
+    border: 1px solid black;
+}
+
+.left{
+    direction:rtl;    
+}
+
+input[type="text"]{
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+input[type="password"]{
+    border: 1px solid black;
+    background-color: yellow;
+}
+
