@@ -6,7 +6,7 @@ function displayMessage(message ,times) {
 } 
 
 
-displayMessage("Hard-Coded message" ,5);
+displayMessage(5);
 
 let userMessage= prompt('enter a message')
 let userTimes=parseInt(prompt('how much time show the message'))

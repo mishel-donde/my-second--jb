@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Making a Cake</h1>
+  <form onsubmit="addCakeToTable(event)" id="cakeForm">
+    <label for="ingredient">ingredient</label>
+    <input id="ingredient" type="text">
+    <br><br>
+
+    <label for="amount">amount</label>
+    <input id="amount" type="number">
+    <br><br>
+
+    <label for="imageUrl">image Url</label>
+    <input id="imageUrl" type="text">
+    <br><br>
+
+    <button>Adding ingredient</button>
+  </form>
+
+  <table >
+    <thead>
+      <tr>
+        <th>ingredient</th>
+        <th>amount</th>
+      </tr>
+    </thead>
+    <tbody id="cakeIngredient">
+    </tbody>
+
+  </table>
+</html>
