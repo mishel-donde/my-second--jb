@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaf3f9;
+  color: #141414;
+}
+
+.card img {
+  max-width: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+.card button {
+  background-color: #4c98af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #c3e4ec;
+}
+
+#report-graph {
+  margin-top: 2em;
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  header input {
+    width: 100%;
+  }
+
+  #coins-container {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header input {
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 4px;
+}
+
+#coins-container {
+  margin-top: 20px;
+}
+
+#report-container {
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 1.5em;
+}
+
+.card-title {
+  font-size: 1.25em;
+}
+
+.card-text {
+  margin-bottom: 0.5em;
+}
+
+button {
+  margin-top: 1em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.form-check-input {
+  width: 2.5rem;
+  height: 1.5rem;
+  background-color: #4c98af;
+  border-radius: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.form-check-input:checked {
+  background-color: #4caf50; /* צבע ירוק כשפעיל */
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.form-check-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+}
+
+.form-check-input:checked::before {
+  transform: translateX(1rem); /* העברת הכפתור במצב פעיל */
+}
+
+.form-check-label {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-check-input::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.form-check-input:not(:checked)::before {
+  transform: translateX(0);
+}
+
+.about-top {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+/* About Tab Styles */
+.about-container {
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #454444;
+  margin-bottom: 1em;
+}
+
+.about-project-heading {
+  font-size: 1.5rem;
+  color: #141414;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+.project-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #141414;
+}
+
+.project-list li {
+  margin-bottom: 8px;
+}
+
+.btn-primary {
+  margin-top: 1.5em;
+  padding: 0.75em 1.5em;
+  background-color: #8e76ae;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-block;
+}

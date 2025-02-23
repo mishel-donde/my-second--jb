@@ -1,0 +1,9 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed lightblue;
+  box-shadow: 2px;
+  padding: 4px;
+  margin: 4px;
+  border-radius: 4px;
+}
