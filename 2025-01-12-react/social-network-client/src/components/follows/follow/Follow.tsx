@@ -1,14 +1,17 @@
 import User from "../../../components/models/user/User";
 import "./Follow.css";
-import profilePicSource from "../../../assets/images/profile-2398783_1280.png";
-import followingService from "../../services/auth-aware/following";
-import LoadingButton from "../../posts/common/loading-button/LoadingButton";
+import profilePicSource from "../../../assets/images/profile.jpg";
+import LoadingButton from "../../common/loading-button/LoadingButton";
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import {
   unfollow as unfollowAction,
   follow as followAction,
 } from "../../../redux/followingSlice";
+import FollowingService from "../../../components/services/auth-aware/following";
+import useService from "../../../hooks/useService";
+import { setNewContent } from "../../../redux/feedSlice";
+
 interface FollowProps {
   user: User;
 }
@@ -24,12 +27,15 @@ export default function Follow(props: FollowProps): JSX.Element {
     (state) => state.following.following.findIndex((f) => f.id === id) > -1
   );
 
+  const followingService = useService(FollowingService);
+
   async function unfollow() {
     if (window.confirm(`are you sure you wanna stop following ${name}?`)) {
       try {
         setIsSubmitting(true);
         await followingService.unfollow(id);
         dispatch(unfollowAction({ userId: id }));
+        dispatch(setNewContent(true));
       } catch (e) {
         alert(e);
       } finally {
@@ -43,6 +49,7 @@ export default function Follow(props: FollowProps): JSX.Element {
       setIsSubmitting(true);
       await followingService.follow(id);
       dispatch(followAction(props.user));
+      dispatch(setNewContent(true));
     } catch (e) {
       alert(e);
     } finally {
